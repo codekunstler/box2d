@@ -1,5 +1,4 @@
-Lightweight Box2DJS
-===
+#Lightweight Box2DJS
 **A lightweight and library free version of the Physics engine for javascript.**
 ***
 
