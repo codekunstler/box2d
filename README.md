@@ -2,7 +2,7 @@
 **A lightweight and library free version of the Physics engine for javascript.**
 ***
 
-This is an attempt to make the Box2DJS Physics engine for javascript [Found here](http://box2d-js.sourceforge.net/) lightweight and 'livrary free' as the original version relies on [**Prototype**](http://prototypejs.org/) for some Objects prototype manipulation.
+This is an attempt to make the Box2DJS Physics engine for javascript [Found here](http://box2d-js.sourceforge.net/) lightweight and 'livrary free' as the original version relies on [Prototype](http://prototypejs.org/) for some Objects prototype manipulation.
 
 Once cleaned up the library was minified with [jscompress](http://jscompress.com/) and further compressed (packed) with Dean Edwards 'packer' [http://dean.edwards.name/packer/](http://dean.edwards.name/packer/). The final result is a file weight reduction from 508kb (382kb Box 2DJS classes + 126 prototypeJS) to 73kb plus the advantage of not depending on any external libraries.
 
