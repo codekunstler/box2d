@@ -25,22 +25,21 @@ function step(cnt) {
 	drawWorld(world, ctx);
 	setTimeout('step(' + (cnt || 0) + ')', 10);
 }
-Event.observe(window, 'load', function() {
+jQuery(window).bind('load', function() {
 	setupWorld();
-	ctx = $('canvas').getContext('2d');
-	var canvasElm = $('canvas');
+	ctx = jQuery('canvas')[0].getContext('2d');
+	var canvasElm = jQuery('canvas')[0];
 	canvasWidth = parseInt(canvasElm.width);
 	canvasHeight = parseInt(canvasElm.height);
 	canvasLeft = jQuery('canvas').offset().left;
 	canvasTop = jQuery('canvas').offset().top;
-	Event.observe('canvas', 'click', function(e) {
-		//setupNextWorld();
+	jQuery('canvas').bind('click', function(e) {
 		if (Math.random() < 0.5) 
-			demos.top.createBall(world, Event.pointerX(e) - canvasLeft, Event.pointerY(e) - canvasTop);
+			demos.top.createBall(world, e.offsetX, e.offsetY);
 		else 
-			createBox(world, Event.pointerX(e) - canvasLeft, Event.pointerY(e) - canvasTop, 10, 10, false);
+			createBox(world, e.offsetX, e.offsetY, 10, 10, false);
 	});
-	Event.observe('canvas', 'contextmenu', function(e) {
+	jQuery('canvas').bind('contextmenu', function(e) {
 		if (e.preventDefault) e.preventDefault();
 		setupPrevWorld();
 		return false;
