@@ -31,8 +31,8 @@ Event.observe(window, 'load', function() {
 	var canvasElm = $('canvas');
 	canvasWidth = parseInt(canvasElm.width);
 	canvasHeight = parseInt(canvasElm.height);
-	canvasTop = parseInt(canvasElm.style.top);
-	canvasLeft = parseInt(canvasElm.style.left);
+	canvasLeft = jQuery('canvas').offset().left;
+	canvasTop = jQuery('canvas').offset().top;
 	Event.observe('canvas', 'click', function(e) {
 		//setupNextWorld();
 		if (Math.random() < 0.5) 
