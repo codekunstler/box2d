@@ -1,8 +1,8 @@
 // ┌────────────────────────────────────────────────────────────────────┐
 // |                                                                    |
 // | CREDTIS:                                                           |
-// | This library was originaly downloaded from:                        |
-// | http://box2d-js.sourceforge.net/                                   |
+// | This is an altered version of library box2djs,                     |
+// | downloaded from: http://box2d-js.sourceforge.net/                  |
 // | My main goals are:                                                 |
 // | 1. Remove dependancy on 3rd party libraries (prototype, jquery...) |
 // | 2. Minify and pack to make it 'usable' in production               |
@@ -10,7 +10,7 @@
 // |    the library too.                                                |
 // |                                                                    |
 // | All credits to the original author,                                |
-// | no ownership or authorship is claimed.                             |
+// | no ownership or authorship claimed.                                |
 // |                                                                    |
 // └────────────────────────────────────────────────────────────────────┘
 
