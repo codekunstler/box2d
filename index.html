@@ -2,63 +2,46 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Box2DJS - Physics Engine for JavaScript</title>
-
-		<!--=============================-->
-		<!-- Copy this part to your app. -->
-		<!-- START                       -->
-		<!--=============================-->
-		<!-- libs -->
+		<title>Box2DJS - Physics Engine for JavaScript</title>
 		<!--[if IE]><script type="text/javascript" src="lib/excanvas.js"></script><![endif]-->
-    
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="{JSPATH}vendor/jquery-1.10.2.min.js"><\/script>')</script>
-	<style>
-	body,html{
-		height:100%;
-		background: #FFFFFF;
-	}
-	#canvas {
-		padding:0; 
-		margin:0; 
-		position:absolute; 
-		background-color:#FFFFFF;
-		left: 50%;
-		top: 50%;
-		width: 500px;
-		height: 300px;
-		margin-left: -250px;
-		margin-top: -150px;
-		-moz-box-shadow: 0 3px 3px 3px RGBA(0,0,0,0.2);
-		-webkit-box-shadow: 0 3px 3px 3px RGBA(0,0,0,0.2);
-		box-shadow: 0 0 3px 3px RGBA(0,0,0,0.2);
-	}
-	</style>
-		<!-- box2djs -->
-    <script src='js/box2d_free.js'></script>
-    
-		<!--=============================-->
-		<!-- Copy this part to your app. -->
-		<!-- END                         -->
-		<!--=============================-->
-
-		<!-- demos -->
-		<script>jQuery.noConflict();</script>
-    <script src='demos/draw_world.js'></script>
-    <script src='demos/demo_base.js'></script>
-    <script src='demos/top.js'></script>
-    <script src='demos/stack.js'></script>
-    <script src='demos/compound.js'></script>
-    <script src='demos/pendulum.js'></script>
-    <script src='demos/crank.js'></script>
-    <script src='demos/demos.js'></script>
-
-    
+		<style>
+			body,html{
+				height:100%;
+				background: #FFFFFF;
+			}
+			#canvas {
+				padding:0; 
+				margin:0; 
+				position:absolute; 
+				background-color:#FFFFFF;
+				left: 50%;
+				top: 50%;
+				width: 500px;
+				height: 300px;
+				margin-left: -250px;
+				margin-top: -150px;
+				-moz-box-shadow: 0 3px 3px 3px RGBA(0,0,0,0.2);
+				-webkit-box-shadow: 0 3px 3px 3px RGBA(0,0,0,0.2);
+				box-shadow: 0 0 3px 3px RGBA(0,0,0,0.2);
+			}
+			p{
+				position: absolute;
+				width: 500px;
+				top: 50%;
+				margin-top: 160px;
+				left: 50%;
+				margin-left: -250px;
+				text-align: center;
+				font-family: helvetica, arial, sans-serif;
+				font-size: 10px;
+			}
+		</style>
 		
-  </head>
-<body>
-
-    <canvas id="canvas" width='500' height='300'></canvas>
-		
-</body>
+	</head>
+	<body>
+		<canvas id="canvas" width='500' height='300' ></canvas>
+		<p>Left-click to create an object. Right-click to show next example.</p>
+		<script src='js/box2d_free.js'></script>
+		<script src='demos/draw_world.js'></script>
+	</body>
 </html>
