@@ -6,8 +6,8 @@ function createWorld() {
 	var doSleep = true;
 	var world = new b2World(worldAABB, gravity, doSleep);
 	createGround(world);
-	createBox(world, 0, 125, 10, 250);
-	createBox(world, 500, 125, 10, 250);
+	createBox(world, -11, 125, 10, 250);
+	createBox(world, 511, 125, 10, 250);
 	return world;
 }
 
@@ -17,7 +17,7 @@ function createGround(world) {
 	groundSd.restitution = 0.2;
 	var groundBd = new b2BodyDef();
 	groundBd.AddShape(groundSd);
-	groundBd.position.Set(-500, 340);
+	groundBd.position.Set(-500, 351);
 	return world.CreateBody(groundBd)
 }
 

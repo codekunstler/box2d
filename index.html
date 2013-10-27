@@ -13,7 +13,27 @@
     
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="{JSPATH}vendor/jquery-1.10.2.min.js"><\/script>')</script>
-	
+	<style>
+	body,html{
+		height:100%;
+		background: #FFFFFF;
+	}
+	#canvas {
+		padding:0; 
+		margin:0; 
+		position:absolute; 
+		background-color:#FFFFFF;
+		left: 50%;
+		top: 50%;
+		width: 500px;
+		height: 300px;
+		margin-left: -250px;
+		margin-top: -150px;
+		-moz-box-shadow: 0 3px 3px 3px RGBA(0,0,0,0.2);
+		-webkit-box-shadow: 0 3px 3px 3px RGBA(0,0,0,0.2);
+		box-shadow: 0 0 3px 3px RGBA(0,0,0,0.2);
+	}
+	</style>
 		<!-- box2djs -->
     <script src='js/box2d_free.js'></script>
     
@@ -35,7 +55,6 @@
 
     
 		
-		<link href="style/box2d.css" rel="stylesheet" type="text/css" />
   </head>
 <body>
 
